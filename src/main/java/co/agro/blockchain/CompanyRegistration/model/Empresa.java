@@ -19,6 +19,10 @@ public class Empresa {
 	private String razonSocialEmpresa;
 	@Column(name="DIRECCION_PRINCIPAL")
 	private String direccionPrincipal;
+	@Column(name="PRIVATE_KEY")
+	private String privateKey;
+	@Column(name="PUBLIC_KEY")
+	private String publicKey;
 	
 	public Empresa() {
 		//constructor principal
@@ -55,6 +59,21 @@ public class Empresa {
 	public void setDireccionPrincipal(String direccionPrincipal) {
 		this.direccionPrincipal = direccionPrincipal;
 	}
-	
+
+	public String getPrivateKey() {
+		return privateKey;
+	}
+
+	public void setPrivateKey(String privateKey) {
+		this.privateKey = privateKey;
+	}
+
+	public String getPublicKey() {
+		return publicKey;
+	}
+
+	public void setPublicKey(String publicKey) {
+		this.publicKey = publicKey;
+	}
 
 }
